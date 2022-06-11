@@ -13,7 +13,8 @@ Sync - using Rest:
 Make use of the endpoint "/send-email", using post method 
 
 Assync - using RabbitMQ:
-Make use of the queue "spring.rabbitmq.queue", which can be defined in "application.properties".
+Make use of the queue "spring.rabbitmq.queue" and amqp uri "spring.rabbitmq.addresses", which can be defined in "application.properties".
+Use https://www.cloudamqp.com/ to create your own queue and AMQP URI to define those properties above.
 
 Both "Sync" and "Assync" ways, do usage of the same payload:
 {
